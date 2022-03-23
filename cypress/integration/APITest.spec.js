@@ -80,7 +80,6 @@ describe('Case study for API', function () {
             url: "https://petstore.swagger.io/v2/pet/1287463"
         }).then(function (response) {
             while(response.status != 200) {
-                console.log("ahmet")
             }
             expect(response.body).to.deep.equal({
                 "code": 200,
